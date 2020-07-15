@@ -84,7 +84,7 @@ NSString* INFO_VOLUME_CHANGED = @"(NATIVE AUDIO) Volume changed.";
     [self.commandDelegate runInBackground:^{
         if (existingReference == nil) {
 
-            NSString* basePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"public"];
+            NSString* basePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@""];
             NSString* path = [NSString stringWithFormat:@"%@", assetPath];
             NSString* pathFromWWW = [NSString stringWithFormat:@"%@/%@", basePath, assetPath];
 
